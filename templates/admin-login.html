@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='src/output.css') }}"
+    />
+    <title>Admin | Login</title>
+  </head>
+  <body class="max-h-screen w-full bg-gray-400">
+    <div class="mx-auto max-w-sm flex justify-center mt-6">
+      <img
+        src="../static/img/pet-logo.svg"
+        alt=""
+        class="object-center w-[200px] border border-gray-400"
+      />
+    </div>
+    <main class="bg-white shadow-lg max-w-sm mx-auto mt-5 rounded-md">
+      <form action="#" class="pt-3 pb-5 px-5">
+        <div>
+          <div class="mb-5">
+            <label for="email" class="block text-md font-normal mb-2"
+              >Username or email address</label
+            >
+            <input
+              type="password"
+              class="py-2 px-3 block w-full border-gray-200 bg-gray-200 rounded-lg text-sm focus:border-gray-500 focus:ring-gray-500 disabled:opacity-50 disabled:pointer-events-none"
+            />
+          </div>
+          <div class="mb-5">
+            <span class="flex justify-between items-center mb-2">
+              <label for="email" class="block text-md font-normal"
+                >Password</label
+              >
+              <small class="text-blue-500"
+                ><a
+                  href="
+                #"
+                  >Forgot Password?</a
+                ></small
+              >
+            </span>
+            <input
+              type="email"
+              class="py-2 px-3 block w-full border-gray-200 bg-gray-200 rounded-lg text-sm focus:border-gray-500 focus:ring-gray-500 disabled:opacity-50 disabled:pointer-events-none"
+            />
+          </div>
+          <div>
+            <button
+              class="hover:bg-[#606345] bg-[#9AC351] hover:text-gray-100 text-[#3D2A3D] py-2 rounded-lg w-full"
+            >
+              Sign in
+            </button>
+          </div>
+        </div>
+      </form>
+    </main>
+    <script src="{{ url_for('serve_preline_js') }}"></script>
+  </body>
+</html>
